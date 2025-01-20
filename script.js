@@ -184,4 +184,12 @@ ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top
 ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
-
+// code for emailjs service
+function sendMail(){
+    let parms = {
+        subject : document.getElementById("usersubject").value,
+        name : document.getElementById("firstname").value,
+        message : document.getElementById("usermessage").value,
+    };
+    emailjs.send("service_auhq98y","template_yst4g5i",parms).then(alert());
+}
