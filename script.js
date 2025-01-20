@@ -190,6 +190,8 @@ function sendMail(){
         subject : document.getElementById("usersubject").value,
         name : document.getElementById("firstname").value,
         message : document.getElementById("usermessage").value,
+        email : document.getElementById("useremail").value,
+        lname : document.getElementById("lastname").value,
     };
     emailjs.send("service_auhq98y","template_yst4g5i",parms).then(alert("Message sent successfully.....Aakash will contact you soon on provided email."));
 }
