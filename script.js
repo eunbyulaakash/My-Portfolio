@@ -205,7 +205,7 @@ function sendMail(){
         if (body.classList.contains('dark-mode')) {
             themeButton.querySelector('i').classList.replace('bx-moon', 'bx-sun');
             body.style.backgroundColor = "#000000";
-            textcolor.style.color = "#e3edf7";
+            textcolor.style.backgroundColor = "#e3edf7";
         } else {
             themeButton.querySelector('i').classList.replace('bx-sun', 'bx-moon');
             body.style.backgroundColor = "#e3edf7";
