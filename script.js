@@ -195,3 +195,15 @@ function sendMail(){
     };
     emailjs.send("service_auhq98y","template_yst4g5i",parms).then(alert("Message sent successfully.....Aakash will contact you soon on provided email."));
 }
+// code for dark/light theme
+    const themeButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    themeButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        // Update the icon based on theme
+        if (body.classList.contains('dark-mode')) {
+            themeButton.querySelector('i').classList.replace('bx-moon', 'bx-sun');
+        } else {
+            themeButton.querySelector('i').classList.replace('bx-sun', 'bx-moon');
+        }
+    });
