@@ -203,7 +203,9 @@ function sendMail(){
         // Update the icon based on theme
         if (body.classList.contains('dark-mode')) {
             themeButton.querySelector('i').classList.replace('bx-moon', 'bx-sun');
+            body.style.backgroundColor = "#000000";
         } else {
             themeButton.querySelector('i').classList.replace('bx-sun', 'bx-moon');
+            body.style.backgroundColor = "#e3edf7";
         }
     });
