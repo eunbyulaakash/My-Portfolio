@@ -211,5 +211,8 @@ function sendMail(){
         } else {
             themeButton.querySelector('i').classList.replace('bx-sun', 'bx-moon');
             body.style.backgroundColor = "#e3edf7";
+            textcolor.forEach(function(element) {
+                element.style.color = "#000000";
+            });
         }
     });
