@@ -1194,7 +1194,7 @@ footer{
         background: var(--gradient-color-bg);
         color: #fff;
         border: none;
-        border-radius: 50%;
+        border-radius: 99px;
         padding: 10px;
         cursor: pointer;
     }
