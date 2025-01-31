@@ -1189,3 +1189,15 @@ footer{
         padding: 13px;
     }
 }
+/* ==================== dark/light theme css code ============================ */
+    .theme-button {
+        background-color: #222;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .theme-button i {
+        font-size: 20px;
+    }
