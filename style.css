@@ -1191,7 +1191,7 @@ footer{
 }
 /* ==================== dark/light theme css code ============================ */
     .theme-button {
-        background-color: #222;
+        background: var(--gradient-color-bg);
         color: #fff;
         border: none;
         border-radius: 5px;
