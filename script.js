@@ -198,21 +198,21 @@ function sendMail(){
 // code for dark/light theme
     const themeButton = document.getElementById('theme-toggle');
     const body = document.body;
-    const textcolor = document.querySelectorAll('h3.changecolor');
+    const textcolor = document.getElementsByClassName('changecolor');
     themeButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         // Update the icon based on theme
         if (body.classList.contains('dark-mode')) {
             themeButton.querySelector('i').classList.replace('bx-moon', 'bx-sun');
             body.style.backgroundColor = "#000000";
-            textcolor.forEach(function(element) {
-                element.style.color = "#e3edf7";
-            });
+            for (let i = 0; i < textcolor.length; i++) {
+                textcolor[i].style.color = "#e3edf7";
+            }
         } else {
             themeButton.querySelector('i').classList.replace('bx-sun', 'bx-moon');
             body.style.backgroundColor = "#e3edf7";
-            textcolor.forEach(function(element) {
-                element.style.color = "#000000";
-            });
+            for (let i = 0; i < textcolor.length; i++) {
+                textcolor[i].style.color = "#000000";
+            }
         }
     });
